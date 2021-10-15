@@ -1,0 +1,80 @@
+:root {
+    --lightGreen: #50c87f;
+    --grayText: #7a897f;
+    --drop-shadow: 0 0 1vh rgba(122, 137, 127, 0.6);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--grayText);
+    background-color: #f5f5f5;
+    font-family: 'Didot', 'Playfair', serif;
+}
+
+/* mobile first design */
+/* header & navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: rgba(245, 245, 245, 0.6);
+}
+
+header h1 {
+    font-weight: bold;
+    margin: 0 1vw;
+    padding: 1vw;
+    flex: 1 15%;
+}
+
+/* nav bar */
+header a {
+    text-decoration: none;
+    color: var(--grayText);
+}
+
+header a:hover {
+    color: var(--lightGreen);
+    text-shadow: var(--drop-shadow);
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header nav ul li {
+    padding: 1vw;
+    margin: 0 1vw;
+}
+
+/* hero styles */
+.hero {
+    height: 40vh;
+    text-align: center;
+    background-image: url("../images/hand-vector-hero.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+}
+
+.hero .hero-name {
+    padding: 12vh;
+    color: #fff;
+    text-shadow: var(--drop-shadow);
+}
+ .hero-name p {
+     font-weight: bold;
+     font-size: 0.5em;
+ }
