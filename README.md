@@ -1,5 +1,6 @@
 # labchild's Portfolio
 A website to showcase my work.
+![preview of portfolio page](./assets/images/preview.png)
 
 ## Description
 A central webpage to host links to all of my deployed projects. Also includes a brief bio and ways to contact me.
@@ -7,7 +8,7 @@ A central webpage to host links to all of my deployed projects. Also includes a 
 ### Key Features
 * Working links to other parts of the page and other parts of the web.
 * Code is commented to provide clarity.
-* Modern web layout using advanced CSS.
+* Responsive and modern web layout using advanced CSS.
 
 ## Built With
 * HTML
