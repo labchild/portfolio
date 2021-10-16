@@ -138,6 +138,7 @@ footer {
 /* my work section */
 .work-card {
     margin: 2vh auto;
+    padding: 2vh 0;
     background-color: var(--lightGreen);
     display: flex;
     flex-wrap: wrap;
@@ -146,8 +147,6 @@ footer {
     width: 85%;
     border-radius: 0 var(--corners);
 }
-
-
 
 .work-card a > img {
     max-width: 75%;
@@ -163,7 +162,7 @@ footer {
 
 .work-thumbnail {
     flex: 1 85%;
-    margin: 7vw auto;
+    margin: 2vh auto 0 auto;
 }
 
 .work-text {
@@ -171,6 +170,11 @@ footer {
     flex: 1 85%;
     margin: 0 auto 7vw;
     max-width: 85%;
+}
+
+.work-text h3 {
+    margin-bottom: 1vh;
+    font-size: 1.5em;
 }
 
 /* contact styles */
@@ -220,11 +224,6 @@ footer {
         margin: 0 1vw;
     }
 
-    .work-thumbnail {
-        margin: 2vw auto;
-        padding: 0;
-    }
-
     .work-text {
         flex: 0 100%;
         margin: 0 auto 2vw;
@@ -259,6 +258,9 @@ footer {
 }
 
 @media screen and (min-width: 980px) {
+    header nav a {
+        font-size: 1.5em;
+    }
     .hero {
         height: 70vh;
         background-size: 55%;
