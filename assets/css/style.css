@@ -3,6 +3,7 @@
     --grayText: #7a897f;
     --drop-shadow: 0 0 1vh rgba(122, 137, 127, 0.6);
     --corners: 10%;
+    --transparent: rgba(122, 137, 127, 0.6)
 }
 
 * {
@@ -107,7 +108,11 @@ footer {
 }
 
  /* about me section */
-.avatar img {
+.avatar {
+    width: 100%;
+}
+
+ .avatar img {
     max-width: 85%;
     filter: saturate(0);
     margin: 2vw;
@@ -121,20 +126,62 @@ footer {
 /* my work section */
 .work-card {
     margin: 2vw;
+    background-color: var(--transparent);
+    border: 1px solid;
+    display: flex;
+    flex-wrap: wrap;
+    color: #fff;
+    align-items: center;
+}
+
+.work-card:hover {
+    background-color: var(--lightGreen);
 }
 
 .work-card a > img {
-    width: 100%;
+    max-width: 85%;
+    padding: 1vw;
+    border-radius: var(--corners);
+    filter: saturate(0);
 }
 
-.work-card a > img {
-    float: left;
-    max-width: 30%;
+.work-card a > img:hover {
+    filter: none;
+}
+
+.work-thumbnail {
+    flex: 1 85%;
+    margin-top: 7vw;
 }
 
 .work-text {
-    margin: 2vw;
-    float: left;
-    min-width: 60%;
-    text-align: left;
+    text-align:left;
+    flex: 1 85%;
+    margin: 7vw;
+    max-width: 85%;
 }
+
+/* contact styles */
+.contact ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.contact ul li {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contact ul li a {
+    text-decoration: none;
+    padding: 0 0 0 1vw;
+}
+
+.icon img {
+    max-width: 10vw;
+    padding: 0 1vw 0 0;
+}
+
