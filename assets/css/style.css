@@ -1,9 +1,10 @@
 :root {
-    --lightGreen: #50c87f;
-    --grayText: #7a897f;
+    --primary-color: #50c87f;
+    --secondary-color: #7a897f;
+    --tertiary-color: #fff;
     --drop-shadow: 0 0 1vh rgba(122, 137, 127, 0.6);
     --corners: 10%;
-    --transparent: rgba(122, 137, 127, 0.7)
+    --transparent: rgba(122, 137, 127, 0.7);
 }
 
 * {
@@ -13,7 +14,7 @@
 }
 
 body {
-    color: var(--grayText);
+    color: var(--secondary-color);
     background-color: #f5f5f5;
     font-family: 'Didot', 'Playfair', serif;
     font-size: 1em;
@@ -48,11 +49,11 @@ header h1 {
 /* nav bar */
 header a {
     text-decoration: none;
-    color: var(--grayText);
+    color: var(--secondary-color);
 }
 
 header a:hover {
-    color: var(--lightGreen);
+    color: var(--primary-color);
     text-shadow: var(--drop-shadow);
 }
 
@@ -69,12 +70,12 @@ header nav ul li {
 
 /* footer styles */
 footer {
-    background-color: var(--lightGreen);
+    background-color: var(--primary-color);
 }
 
 .foot-text {
     padding: 1vw;
-    color: #fff;
+    color: var(--tertiary-color);
 }
 
 .foot-text h2 {
@@ -98,7 +99,7 @@ footer {
 
 .hero .hero-name {
     padding: 12vh;
-    color: #fff;
+    color: var(--tertiary-color);
     text-shadow: var(--drop-shadow);
 }
  .hero-name p {
@@ -115,7 +116,7 @@ footer {
 
 .content-section h2 {
     margin: 0 auto 4vh auto;
-    border-bottom: 1px solid var(--lightGreen);
+    border-bottom: 1px solid var(--primary-color);
     width: 60%;
 }
 
@@ -139,10 +140,10 @@ footer {
 .work-card {
     margin: 2vh auto;
     padding: 2vh 0;
-    background-color: var(--lightGreen);
+    background-color: var(--primary-color);
     display: flex;
     flex-wrap: wrap;
-    color: #fff;
+    color: var(--tertiary-color);
     align-items: center;
     width: 85%;
     border-radius: 0 var(--corners);
@@ -195,7 +196,7 @@ footer {
     text-decoration: none;
     padding: 0 1vw;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: var(--grayText);
+    color: var(--secondary-color);
 }
 
 .icon img {
@@ -204,6 +205,7 @@ footer {
 }
 
 /* styles for larger screens */
+/* styles for tablets */
 @media screen and (min-width: 768px) {
     .hero {
         height: 70vh;
@@ -257,6 +259,7 @@ footer {
     }
 }
 
+/* styles for desktop  */
 @media screen and (min-width: 980px) {
     header nav a {
         font-size: 1.5em;
