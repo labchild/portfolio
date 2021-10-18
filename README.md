@@ -8,7 +8,7 @@ A central webpage to host links to all of my deployed projects. Also includes a 
 ### Key Features
 * Working links to other parts of the page and other parts of the web.
 * Code is commented to provide clarity.
-* Responsive and modern web layout using advanced CSS.
+* Responsive and modern web layout using CSS.
 
 ## Built With
 * HTML
